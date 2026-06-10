@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jasminer X16Q ETHW Firmware</title>
+    <meta
+      name="description"
+      content="Custom Jasminer X16-Q / Q Pro firmware builds with ETHW, overclocking, and voltage settings."
+    >
+    <meta name="theme-color" content="#f5f7f4">
+    <link rel="stylesheet" href="styles.css?v=20260610">
+  </head>
+  <body>
+    <div class="page">
+      <main id="top">
+        <section class="hero-section" aria-labelledby="hero-title">
+          <div class="hero-inner">
+            <div class="hero-content">
+              <h1 id="hero-title">Custom Jasminer X16-Q / Q Pro firmware with ETHW and overclocking support</h1>
+              <p>
+                Jasminer X16-Q builds with ASIC clock tuning and voltage
+                settings.
+              </p>
+
+              <div class="hero-proof-group">
+                <p class="hero-proof">
+                  Tested on 50+ miners. Up to 7x ETHW mining profits.
+                </p>
+                <p class="hero-note">X16-P version in development.</p>
+              </div>
+
+              <div class="hero-actions">
+                <a class="primary-link" href="#more-info" data-scroll-target="#more-info">More info</a>
+                <a
+                  class="secondary-link"
+                  href="https://ethw.2miners.com/account/bc1qlf08wy0qtykpre2s4wt9cj54meqqc25tkvggn6"
+                  target="_blank"
+                  rel="noopener"
+                >2Miners proof</a>
+              </div>
+            </div>
+
+            <figure class="hero-product">
+              <img src="assets/jasminer-x16q.png" alt="Jasminer X16-Q miner">
+            </figure>
+          </div>
+        </section>
+
+        <section class="info-section" id="more-info" aria-labelledby="info-title">
+          <div class="info-inner">
+            <div class="section-heading">
+              <h2 id="info-title">Tuning controls + ETHW support.</h2>
+              <p>
+                A focused custom build for miners who want direct control over
+                frequency, voltage, ASIC status, and memory checks.
+              </p>
+            </div>
+
+            <div class="info-layout">
+              <div class="details-column">
+                <section class="feature-panel">
+                  <h3>Overclocking control</h3>
+                  <ul class="support-list">
+                    <li>Advanced voltage control</li>
+                    <li>Advanced frequency control</li>
+                    <li>Enable / disable ASICs</li>
+                    <li>Memory check settings</li>
+                  </ul>
+
+                  <p class="warning">
+                    Be patient with overclocking settings. Test changes gradually
+                    and watch temperature and reject rate.
+                  </p>
+                </section>
+
+                <section class="fee-panel">
+                  <p class="eyebrow">Trial version</p>
+                  <h3>15% dev fee included.</h3>
+                  <p>
+                    Trial builds include a 15% developer fee. The fee can be
+                    removed as a paid upgrade for miners that want the full build.
+                  </p>
+                </section>
+              </div>
+
+              <section class="request-panel" id="request" aria-labelledby="request-title">
+                <div class="request-copy">
+                  <p class="eyebrow">Custom build request</p>
+                  <h2 id="request-title">Request a free build</h2>
+                </div>
+
+                <div class="request-form">
+                  <div class="source-field">
+                    <fieldset class="radio-field">
+                      <legend>Does your Jasminer show Machine SN on the Dashboard?</legend>
+                      <div class="choice-row">
+                        <label class="choice-pill">
+                          <input
+                            type="radio"
+                            name="machine-sn-visible"
+                            value="yes"
+                            data-machine-sn-choice
+                          >
+                          Yes
+                        </label>
+                        <label class="choice-pill">
+                          <input
+                            type="radio"
+                            name="machine-sn-visible"
+                            value="no"
+                            data-machine-sn-choice
+                          >
+                          No
+                        </label>
+                      </div>
+                    </fieldset>
+                  </div>
+
+                  <div class="source-field" data-machine-sn-field hidden>
+                    <label for="machine-sn-input">Machine SN</label>
+                    <input
+                      id="machine-sn-input"
+                      type="text"
+                      data-machine-sn-input
+                      placeholder="Z16..."
+                      disabled
+                    >
+                  </div>
+
+                  <div class="source-field" data-mac-field hidden>
+                    <label for="mac-input">MAC</label>
+                    <input
+                      id="mac-input"
+                      type="text"
+                      data-mac-input
+                      placeholder="60:EA:72:..."
+                      disabled
+                    >
+                    <label for="mac2-input">MAC2 <span class="optional-label">(optional)</span></label>
+                    <input
+                      id="mac2-input"
+                      type="text"
+                      data-mac2-input
+                      placeholder="60:EA:72:..."
+                      disabled
+                    >
+                    <p class="field-warning">
+                      WiFi and wired MAC addresses are different. Send both if
+                      possible, or the unused connection may stop working while
+                      this firmware is installed.
+                      <span class="help-tip" tabindex="0">
+                        <span class="help-icon">?</span>
+                        <span class="help-text" role="tooltip">
+                          Wired MAC: connect the miner with a LAN cable, reboot,
+                          then check the dashboard. WiFi MAC: connect the miner
+                          to WiFi, reboot, then check MAC on the dashboard.
+                        </span>
+                      </span>
+                    </p>
+                  </div>
+
+                  <div class="source-field">
+                    <label for="notes-input">Notes</label>
+                    <textarea
+                      id="notes-input"
+                      data-notes-input
+                      rows="3"
+                      placeholder="Add build notes"
+                    ></textarea>
+                  </div>
+
+                  <div class="source-field">
+                    <label for="source-select">Where did you hear about us?</label>
+                    <select id="source-select" data-source-select>
+                      <option value="" selected disabled>Select one</option>
+                      <option value="k1pool">k1pool</option>
+                      <option value="gtpool">gtpool</option>
+                      <option value="other">other</option>
+                    </select>
+                    <input
+                      type="text"
+                      data-source-other
+                      aria-label="Other source"
+                      placeholder="Enter source"
+                      hidden
+                    >
+                  </div>
+
+                  <div class="button-stack">
+                    <button class="copy-button" type="button" data-copy-request>Copy request template</button>
+                    <button class="contact-button" type="button" data-open-contact>Request free build</button>
+                  </div>
+                  <p class="copy-status" role="status" aria-live="polite" data-copy-status></p>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <figure class="settings-preview" id="settings-preview">
+            <img
+              src="assets/advanced-settings-cropped.png"
+              alt="Overclocking controls with voltage settings, ASIC tuning, memory settings, and developer fee"
+            >
+          </figure>
+        </section>
+      </main>
+
+      <footer class="footer">
+        Independent firmware project. Not affiliated with or endorsed by Jasminer or Sunlune.
+      </footer>
+    </div>
+
+    <div class="contact-overlay" data-contact-modal hidden>
+      <section
+        class="contact-window"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="contact-title"
+      >
+        <div class="contact-titlebar">
+          <strong id="contact-title">Request Free Build</strong>
+          <button class="close-button" type="button" aria-label="Close" data-close-contact>&times;</button>
+        </div>
+
+        <div class="contact-body">
+          <p>Send your copied request template through Telegram or email.</p>
+
+          <div class="qr-grid">
+            <a class="qr-card" href="https://t.me/jakob_jas" target="_blank" rel="noopener">
+              <span class="qr-eyebrow">Telegram</span>
+              <span class="qr-frame">
+                <img src="assets/telegram-jakob-jas.png" alt="Telegram QR code for @JAKOB_JAS">
+              </span>
+              <strong>@JAKOB_JAS</strong>
+            </a>
+
+            <a class="qr-card" href="https://t.me/Lanjasfw" target="_blank" rel="noopener">
+              <span class="qr-eyebrow">Telegram</span>
+              <span class="qr-frame">
+                <img src="assets/telegram-lanjasfw.png" alt="Telegram QR code for @LANJASFW">
+              </span>
+              <strong>@LANJASFW</strong>
+            </a>
+          </div>
+
+          <a class="email-link" href="mailto:jasminerfw@gmail.com">jasminerfw@gmail.com</a>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js?v=20260610" defer></script>
+  </body>
+</html>
